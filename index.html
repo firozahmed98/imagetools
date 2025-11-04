@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ✅ Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Tools Hub — Compress, Resize, Convert & Edit Images Online</title>
+  <meta name="description" content="Free online image tools to compress, resize, crop, convert, and watermark your pictures instantly — 100% browser-based and privacy-friendly." />
+  <meta name="keywords" content="image compressor, image resizer, image converter, image cropper, photo editor, webp converter, watermark tool, online image tools" />
+  <meta name="author" content="Image Tools Hub" />
+
+  <!-- ✅ Open Graph (for social media) -->
+  <meta property="og:title" content="Image Tools Hub — All-in-One Image Utility Platform" />
+  <meta property="og:description" content="Free browser-based image tools: Compress, resize, crop, convert, and edit images instantly." />
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Image Tools Hub" />
+  <meta name="twitter:description" content="Compress, resize, crop, and edit images online — free and private." />
+  <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="https://yourdomain.com/favicon.ico" type="image/x-icon" />
+
+  <!-- ✅ Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #2d3436;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #636e72;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1100px;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .tool-card {
+      background: white;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .tool-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tool-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #2d3436;
+    }
+
+    .tool-card p {
+      color: #636e72;
+      font-size: 0.95rem;
+    }
+
+    .ad-container {
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 1rem;
+      color: #636e72;
+      font-size: 0.9rem;
+    }
+  </style>
+
+  <!-- ✅ Google AdSense / AdMob Script Placeholder -->
+  <!-- Replace YOUR-AD-CLIENT-ID with your AdSense client ID -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR-AD-CLIENT-ID" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1>🖼️ Image Tools Hub</h1>
+    <p>All your image utilities — fast, free, and right in your browser</p>
+  </header>
+
+  <!-- ✅ Top Ad Slot -->
+  <div class="ad-container">
+    <!-- Replace with your AdMob ad unit -->
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="YOUR-AD-CLIENT-ID"
+      data-ad-slot="TOP-AD-SLOT-ID"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <main>
+    <article class="tool-card" onclick="goTo('compressor.html')" aria-label="Image Compressor">
+      <div class="tool-icon">📉</div>
+      <h3>Image Compressor</h3>
+      <p>Reduce file size without losing much quality. Perfect for web uploads.</p>
+    </article>
+
+    <article class="tool-card" onclick="goTo('resizer.html')" aria-label="Image Resizer">
+      <div class="tool-icon">📏</div>
+      <h3>Image Resizer</h3>
+      <p>Resize images to your preferred dimensions instantly.</p>
+    </article>
+
+    <article class="tool-card" onclick="goTo('cropper.html')" aria-label="Image Cropper">
+      <div class="tool-icon">✂️</div>
+      <h3>Image Cropper</h3>
+      <p>Crop photos and focus on what really matters in seconds.</p>
+    </article>
+
+    <article class="tool-card" onclick="goTo('converter.html')" aria-label="Image Converter">
+      <div class="tool-icon">🔄</div>
+      <h3>Image Converter</h3>
+      <p>Convert between JPG, PNG, and WEBP formats easily.</p>
+    </article>
+
+    <article class="tool-card" onclick="goTo('filter.html')" aria-label="Filter and Effects">
+      <div class="tool-icon">🎨</div>
+      <h3>Filter & Effects</h3>
+      <p>Apply stylish filters, brightness, contrast, and more.</p>
+    </article>
+
+    <article class="tool-card" onclick="goTo('watermark.html')" aria-label="Watermark Tool">
+      <div class="tool-icon">💧</div>
+      <h3>Watermark Tool</h3>
+      <p>Add your brand or copyright mark directly onto images.</p>
+    </article>
+  </main>
+
+  <!-- ✅ Bottom Ad Slot -->
+  <div class="ad-container">
+    <!-- Replace with your AdMob ad unit -->
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="YOUR-AD-CLIENT-ID"
+      data-ad-slot="BOTTOM-AD-SLOT-ID"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <footer>
+    © 2025 Image Tools Hub — All tools run 100% locally in your browser
+  </footer>
+
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>
